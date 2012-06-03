@@ -35,6 +35,10 @@ function init()
 
 function run()
       {
+      // no score open (MuseScore 2.0+, can't happen earlier)
+      if (typeof curScore === 'undefined')
+          return;
+      
       var cursor   = new Cursor(curScore);
       cursor.staff = 0;
       cursor.voice = 0;

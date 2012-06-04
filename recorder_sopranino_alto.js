@@ -41,6 +41,8 @@ function init()
 
 function run()
       {
+      if (typeof curScore === 'undefined')	
+            return;
       var cursor   = new Cursor(curScore);
       cursor.staff = 0;
       cursor.voice = 0;
